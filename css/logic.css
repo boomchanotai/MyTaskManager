@@ -1,0 +1,46 @@
+.icon-box{
+    font-family: 'Poppins-Regular', 'Kanit-Regular';
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color: white;
+    border-radius: 40px;
+    padding: 50px 100px;
+    -webkit-box-shadow: 10px 10px 23px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -16px rgba(0,0,0,0.75);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 850px){
+    .icon-box{
+        padding: 20px 80px;
+    }
+    .icon-box h3{
+        font-size: 16px;
+    }
+}
